@@ -12,7 +12,7 @@ import sys
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "src"))
 
 from build_dataset import SITE_TYPES, feature_positions, protected_positions
 from codec import ALPHABET, decode, decode_standalone, encode, encode_standalone, selected_patch_positions

@@ -1,6 +1,6 @@
 """Run an auditable, actual-byte 100-protein UniProt sequence experiment.
 
-Usage: python experiment.py
+Usage: python src/experiment.py
 All results are computed from bundled frozen UniProt sequence/feature snapshots.
 """
 
@@ -18,7 +18,7 @@ import statistics
 from build_dataset import SITE_TYPES, feature_positions, protected_positions
 from codec import ALPHABET, decode, decode_standalone, encode, encode_standalone
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data' / 'uniprot_100.json'
 RESULTS = ROOT / 'results'
 

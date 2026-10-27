@@ -20,7 +20,7 @@ import struct
 from build_dataset import SITE_TYPES, feature_positions, protected_positions
 from codec import decode, decode_standalone, encode, encode_standalone
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'data' / 'uniprot_100.json'
 RESULTS = ROOT / 'results'
 MAGIC = b'FPCA'

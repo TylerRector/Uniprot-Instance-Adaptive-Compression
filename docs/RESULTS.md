@@ -136,16 +136,7 @@ is no held-out inference model, learned functional codebook, trained
 compression model, insertions/deletions, sequence alignment, structure
 prediction, measured reaction rates, or external functional screening score.
 
-## Charts and machine-readable exports
-
-| Figure | Data |
-| --- | --- |
-| `charts/whole_corpus_baselines.png` and `.svg` | Generic compression vs guarded archives |
-| `charts/storage_comparison.png` and `.svg` | Naive vs pooled reference overhead |
-| `charts/site_preservation.png` and `.svg` | Real and synthetic site-feature agreements |
-| `charts/rate_distortion.png` and `.svg` | Exact payload bytes versus residue identity |
-| `charts/family_challenges.png` and `.svg` | Rare natural site mismatches, by family |
-| `charts/overview.png` and `.svg` | Four-panel overview |
+## Machine-readable exports
 
 `results/per_protein.csv`, `by_family.csv`, `rate_distortion.csv`,
 `whole_corpus_baselines.csv`, `synthetic_site_stress.csv`, both pooled
@@ -155,7 +146,7 @@ sequence versions, descriptions and the annotated feature evidence codes.
 
 ## Formal assurance: narrow but real
 
-`proof/FunctionGuard.lean` was compiled with Lean 4.20.0, without any `sorry`
+`Lean/FunctionGuard.lean` was compiled with Lean 4.20.0, without any `sorry`
 or `admit`. Its main guarantee is pointwise exactness for all selected sites,
 regardless of optional edits. A second theorem states an override-only codec
 must correct each differing target coordinate to be exact there. These proofs

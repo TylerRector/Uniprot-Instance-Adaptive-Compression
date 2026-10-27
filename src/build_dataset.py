@@ -17,7 +17,7 @@ from pathlib import Path
 
 from codec import ALPHABET
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / 'data' / 'raw_queries'
 OUTPUT = ROOT / 'data' / 'uniprot_100.json'
 

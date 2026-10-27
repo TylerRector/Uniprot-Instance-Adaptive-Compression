@@ -15,16 +15,10 @@ jobs:
           python-version: '3.12'
       - name: Test 100-protein corpus and pooled archives
         run: python -m unittest discover -s tests -v
-      - name: Regenerate metrics and figures
+      - name: Regenerate metrics and archives
         run: |
-          python -m pip install -r requirements.txt
-          python experiment.py
-          python pool_archive.py
-          python plot_results.py
-      - name: Validate all exported PNG files
-        run: |
-          python -m pip install Pillow
-          python -c 'from pathlib import Path; from PIL import Image; [(lambda im: im.verify())(Image.open(p)) for p in Path("charts").glob("*.png")]; print("PNG files verified")'
+          python src/experiment.py
+          python src/pool_archive.py
 
   lean4:
     runs-on: ubuntu-latest
@@ -35,4 +29,4 @@ jobs:
           auto-config: false
           use-github-cache: false
       - name: Kernel-check feature preservation theorems
-        run: lean proof/FunctionGuard.lean
+        run: lean Lean/FunctionGuard.lean
