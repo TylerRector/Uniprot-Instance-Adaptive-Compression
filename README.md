@@ -2,7 +2,7 @@
 
 Reference-based compression of 100 UniProt proteins across 9 families, with
 Lean 4 proofs that selected functional-site residues remain exact.
-This does not guarantee biochemical activity.
+This does not guarantee translation across biochemical activity.
 
 | Encoding | Bytes | Exact full sequences? |
 | --- | ---: | :---: |
