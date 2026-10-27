@@ -1,0 +1,38 @@
+name: Verify Python and Lean 4
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test 100-protein corpus and pooled archives
+        run: python -m unittest discover -s tests -v
+      - name: Regenerate metrics and figures
+        run: |
+          python -m pip install -r requirements.txt
+          python experiment.py
+          python pool_archive.py
+          python plot_results.py
+      - name: Validate all exported PNG files
+        run: |
+          python -m pip install Pillow
+          python -c 'from pathlib import Path; from PIL import Image; [(lambda im: im.verify())(Image.open(p)) for p in Path("charts").glob("*.png")]; print("PNG files verified")'
+
+  lean4:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          use-github-cache: false
+      - name: Kernel-check feature preservation theorems
+        run: lean proof/FunctionGuard.lean

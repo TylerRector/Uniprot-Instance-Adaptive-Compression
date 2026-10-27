@@ -1,0 +1,7 @@
+arm,label,payload_bytes,sequence_identity_percent,site_feature_recall_percent
+reference_only,No edits,1600,89.727812,98.825832
+guarded,Guard,1918,90.72565,100.0
+optional25,+25%,2567,92.826653,100.0
+optional50,+50%,3273,95.215921,100.0
+optional75,+75%,3936,97.444426,100.0
+lossless,Lossless,4700,100.0,100.0

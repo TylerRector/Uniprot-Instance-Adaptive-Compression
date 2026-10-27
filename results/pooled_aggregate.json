@@ -1,0 +1,30 @@
+{
+  "guarded": {
+    "all_feature_positions_preserved": true,
+    "all_sequences_lossless": false,
+    "bytes": 8107,
+    "group_count": 50,
+    "gzip_bytes": 6828,
+    "lzma_xz_bytes": 6876,
+    "ratio_to_standalone": 0.7037937320947999,
+    "reference_count": 16,
+    "reference_supported_targets": 66,
+    "selected_reference_groups": 16,
+    "standalone_targets": 34
+  },
+  "lossless": {
+    "all_feature_positions_preserved": true,
+    "all_sequences_lossless": true,
+    "bytes": 9803,
+    "group_count": 50,
+    "gzip_bytes": 8595,
+    "lzma_xz_bytes": 8616,
+    "ratio_to_standalone": 0.851028735133258,
+    "reference_count": 15,
+    "reference_supported_targets": 59,
+    "selected_reference_groups": 15,
+    "standalone_targets": 41
+  },
+  "records": 100,
+  "standalone_100_bytes": 11519
+}

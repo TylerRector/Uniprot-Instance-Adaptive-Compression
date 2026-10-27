@@ -1,0 +1,7 @@
+method,bytes,sequence_lossless
+ASCII + LZMA (lossless),6224,True
+"Pooled guard + gzip (site-exact, lossy)",6828,False
+ASCII + gzip (lossless),7475,True
+"Pooled guard (site-exact, lossy)",8107,False
+Pooled lossless (lossless),9803,True
+Packed 5-bit (lossless),11519,True

@@ -1,0 +1,111 @@
+{
+  "ascii_corpus_gzip_bytes": 7475,
+  "ascii_corpus_lzma_xz_bytes": 6224,
+  "ascii_corpus_newline_delimited_bytes": 18139,
+  "cost_caveats": [
+    "Reference selection/accession index side information is not included in wire sizes.",
+    "Functional-site annotation metadata and protected masks are not included in wire sizes.",
+    "The real cohort is deterministic but not an independently sampled UniProt population.",
+    "Exact sequence at annotated sites is not laboratory proof of biological function.",
+    "Reference-conditioned streams require the exact correct reference at decode time."
+  ],
+  "dataset": "uniprot_100.json",
+  "dataset_sha256": "70c625ee10e5070e2746e7f85a334e7008994436c31e238961b6d6cc2023e2db",
+  "distinct_reference_accessions": 93,
+  "families": 9,
+  "guarded_bytes": {
+    "max": 44,
+    "mean": 19.18,
+    "median": 18.0,
+    "min": 16,
+    "q1": 16,
+    "q3": 20
+  },
+  "guarded_identity": {
+    "max": 0.974025974025974,
+    "mean": 0.908784,
+    "median": 0.934413,
+    "min": 0.7244897959183674,
+    "q1": 0.876623,
+    "q3": 0.955128
+  },
+  "guarded_patches": {
+    "max": 17,
+    "mean": 1.8,
+    "median": 1.0,
+    "min": 0,
+    "q1": 0,
+    "q3": 2
+  },
+  "guarded_site_recall_macro": 1.0,
+  "guarded_site_recall_micro": 1.0,
+  "lossless_bytes": {
+    "max": 190,
+    "mean": 47,
+    "median": 38.0,
+    "min": 21,
+    "q1": 28,
+    "q3": 51
+  },
+  "lossless_patches": {
+    "max": 99,
+    "mean": 18.53,
+    "median": 13.0,
+    "min": 3,
+    "q1": 7,
+    "q3": 20
+  },
+  "natural_challenged_proteins": 6,
+  "natural_challenged_site_residues": 6,
+  "packed_corpus_gzip_bytes": 8276,
+  "packed_corpus_lzma_xz_bytes": 7872,
+  "payload_bytes": {
+    "guarded": 1918,
+    "lossless": 4700,
+    "optional25": 2567,
+    "optional50": 3273,
+    "optional75": 3936,
+    "reference_only": 1600
+  },
+  "protected_fraction": {
+    "max": 0.42948717948717946,
+    "mean": 0.145959,
+    "median": 0.097834,
+    "min": 0.003289473684210526,
+    "q1": 0.064935,
+    "q3": 0.210526
+  },
+  "proteins": 100,
+  "reference_identity": {
+    "max": 0.9690721649484536,
+    "mean": 0.898357,
+    "median": 0.926837,
+    "min": 0.7103448275862069,
+    "q1": 0.863946,
+    "q3": 0.950192
+  },
+  "reference_site_recall_macro": 0.992900432900433,
+  "reference_site_recall_micro": 0.9882583170254403,
+  "shared_reference_guarded_total_bytes": 12662,
+  "shared_reference_guarded_vs_standalone_ratio": 1.0992273634864138,
+  "shared_reference_lossless_total_bytes": 15444,
+  "shared_reference_lossless_vs_standalone_ratio": 1.3407413838006772,
+  "site_feature_annotations": 511,
+  "site_features_with_experimental_ECO_0000269": 35,
+  "standalone_bytes": {
+    "max": 324,
+    "mean": 115.19,
+    "median": 99.0,
+    "min": 63,
+    "q1": 94,
+    "q3": 124
+  },
+  "sum_ascii_bytes": 18039,
+  "sum_feature_mask_bitmap_bytes": 2315,
+  "sum_gzip_bytes": 13652,
+  "sum_packed_standalone_bytes": 11519,
+  "sum_unique_reference_packed_bytes": 10744,
+  "synthetic_guarded_site_recall_macro": 1.0,
+  "synthetic_reference_site_recall_macro": 0.6558632756132756,
+  "synthetic_site_stress_proteins": 100
+}

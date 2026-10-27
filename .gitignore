@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.elan/
+.lake/
+data/raw_queries/
+*.log
+.DS_Store

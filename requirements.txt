@@ -1,0 +1,4 @@
+# Core codec, experiment, dataset builder and tests use the Python standard library.
+# Only chart generation needs these packages.
+matplotlib>=3.8,<4
+numpy>=1.26,<3

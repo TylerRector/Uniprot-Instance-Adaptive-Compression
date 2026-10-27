@@ -1,0 +1,10 @@
+family,proteins,mean_length_aa,mean_reference_identity,total_site_features,natural_site_challenge_cases,site_recall_reference_weighted,site_recall_guarded_weighted,total_packed_bytes,total_guarded_bytes,total_lossless_bytes,reference_pool_packed_bytes
+carbonic_anhydrase,8,280.88,0.92303,34,0,1.0,1.0,1424,141,439,1232
+cytochrome_c,10,214.6,0.92573,56,0,1.0,1.0,1365,172,438,1297
+ferredoxin,4,165.75,0.84114,26,0,1.0,1.0,424,73,293,424
+hemoglobin,4,145.5,0.95166,8,0,1.0,1.0,373,68,111,373
+lysozyme,20,157.8,0.88658,107,1,0.99065,1.0,2021,415,888,1926
+myoglobin,20,153.25,0.92982,56,0,1.0,1.0,1970,334,675,1772
+ribonuclease,12,157.08,0.92396,105,5,0.95238,1.0,1208,259,433,1114
+superoxide_dismutase,18,183.17,0.84099,102,0,1.0,1.0,2102,388,1174,1974
+thioredoxin,4,249.5,0.86739,17,0,1.0,1.0,632,68,249,632
