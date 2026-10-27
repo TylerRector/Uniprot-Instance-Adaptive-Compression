@@ -1,8 +1,6 @@
 # Uniprot Instance Adaptive Compression
 
-Reference-based compression of 100 UniProt proteins across 9 families, with
-Lean 4 proofs that selected functional-site residues remain exact.
-This does not guarantee translation across biochemical activity.
+Adaptation of the method outlined in my previous project [affine-transport](https://github.com/TylerRector/affine-transport). Reference-based compression of 100 UniProt proteins across 9 families, with Lean 4 proofs that selected functional-site residues remain exact. This does not guarantee translation across biochemical activity.
 
 | Encoding | Bytes | Exact full sequences? |
 | --- | ---: | :---: |
