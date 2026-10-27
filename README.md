@@ -24,4 +24,4 @@ lean Lean/FunctionGuard.lean
 ```
 
 `src/`: Python code · `Lean/`: proofs · `data/`: frozen UniProt records ·
-`results/`: measured outputs · [Detailed results](docs/RESULTS.md). MIT license.
+`results/`: measured outputs. MIT license.
